@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="Your AI sales assistant for outreach, leads, and follow-ups."
+  >
+  <title>AI Sales Agent</title>
+
+  <link rel="stylesheet" href="styles.css">
+<script src="script.js" defer></script>
+  <!-- Add your custom CSS and JavaScript files, then uncomment: -->
+  <!-- <link rel="stylesheet" href="styles.css"> -->
+  <!-- <script src="script.js" defer></script> -->
+</head>
+
+<body>
+  <header class="site-header">
+    <a class="brand" href="./">Sales<span>Agent</span></a>
+  </header>
+
+  <main>
+    <section class="agent" aria-labelledby="agent-title">
+      <p class="eyebrow">Your AI sales assistant</p>
+
+      <h1 id="agent-title">Your next sale starts here.</h1>
+
+      <p class="description" id="agent-description">
+        Craft your outreach, plan your follow-ups, and find the
+        right words to move a conversation forward.
+      </p>
+
+      <!-- Replace the submit handler when connecting your JavaScript. -->
+      <form
+        id="sales-agent-form"
+        class="agent-form"
+        aria-describedby="agent-description"
+        
+      >
+        <label class="input-label" for="sales-question">
+          What can I help you with?
+        </label>
+
+        <input
+          class="question-input"
+          id="sales-question"
+          name="question"
+          type="text"
+          placeholder="Help me write a follow-up email…"
+          required
+        >
+
+        <button class="submit-button" id="submit-button" type="submit">
+          Ask your agent
+        </button>
+      </form>
+
+      <!-- Populate this region with your JavaScript response. -->
+      <div
+        id="agent-response"
+        class="response"
+        role="status"
+        aria-live="polite"
+        aria-atomic="true"
+      ></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    AI Sales Agent
+  </footer>
+</body>
+</html>
